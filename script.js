@@ -44,19 +44,37 @@ const hizoclick = function(elemento){
 
 		else {
 			valor2 = parseInt(display.value)
+			console.log(`Valor2 = ${valor2}`)
 			
 		}
 		
-		
-		count++
-		console.log(count)
-		if(count==2){
+	}
+
+	count++
+	console.log(count)
+
+	if(valor2!=0){
 
 			switch (opera) {
 				case '+':
 					
 					total = valor1 + valor2
-					display.value = total
+					
+				let espera = true;
+				console.log("He declarado la variable e inicializado espera")
+					while(espera){//creo no es necesario poner el while si los eventos siempra se activaran cuando los disparemos
+
+						main.children[16].addEventListener("click", ()=>{
+							console.log("boton = presionado")
+
+							display.value = total
+							
+
+						})
+						
+
+						espera = false
+					}
 					
 
 					break;
@@ -85,7 +103,7 @@ const hizoclick = function(elemento){
 
 		}
 
-	}
+	
 
 
 
