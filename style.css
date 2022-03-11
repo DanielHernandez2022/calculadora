@@ -57,12 +57,14 @@ body{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(6,1fr);
         
+        
     
     }
 
     .buttons{
 
         background-color: var(--color-contrast);
+        font-size: 1.5rem;
 
     }
     
@@ -72,7 +74,8 @@ body{
         grid-column: 1 / 5;
         grid-row: 1/ 2;
         font-size: 2rem;
-        padding-right: 0;
+        padding-right: 5px;
+        text-align: right;
         
         
     

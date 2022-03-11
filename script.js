@@ -60,37 +60,65 @@ const hizoclick = function(elemento){
 					
 					total = valor1 + valor2
 					
-				let espera = true;
+				
 				console.log("He declarado la variable e inicializado espera")
-					while(espera){//creo no es necesario poner el while si los eventos siempra se activaran cuando los disparemos
+					
 
 						main.children[16].addEventListener("click", ()=>{
 							console.log("boton = presionado")
 
 							display.value = total
-							
+						})	
 
-						})
 						
-
-						espera = false
-					}
 					
 
 					break;
 
 				case "-":
 					
-					display.value = valor1 - valor2
+					total = valor1 - valor2
+					
+				
+				console.log("He declarado la variable e inicializado espera")
+					
+
+						main.children[16].addEventListener("click", ()=>{
+							console.log("boton = presionado")
+
+							display.value = total
+						})	
+
+
 					break;
 
 				case "*":
 
-					display.value = valor1 * valor2
+					total = valor1 * valor2
+					
+				
+				console.log("He declarado la variable e inicializado espera")
+					
+
+						main.children[16].addEventListener("click", ()=>{
+							console.log("boton = presionado")
+
+							display.value = total
+						})	
 					break;
 				case "/":
 					
-					display.value = (valor1) / (valor2)
+					total = valor1 / valor2
+					
+				
+				console.log("He declarado la variable e inicializado espera")
+					
+
+						main.children[16].addEventListener("click", ()=>{
+							console.log("boton = presionado")
+
+							display.value = total
+						})	
 
 				break;
 				default:
