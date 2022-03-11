@@ -106,6 +106,7 @@ const hizoclick = function(elemento){
 							display.value = total
 						})	
 					break;
+					
 				case "/":
 					
 					total = valor1 / valor2
