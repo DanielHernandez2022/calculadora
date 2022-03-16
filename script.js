@@ -27,6 +27,8 @@ let total=0;
 
 const hizoclick = function(elemento){
 
+	
+
 
 	display.value = this.textContent
 
